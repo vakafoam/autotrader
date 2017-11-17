@@ -13,6 +13,7 @@ class Builder
     $menu = $factory->createItem('root');
     $menu->addChild('Home', ['route' => 'homepage']);
     $menu->addChild('Offer', ['route' => 'offer']);
+    $menu->addChild('Manage Cars', ['route' => 'car_index']);
 
     // Add bootstrap class for menu items
     $menu->setChildrenAttribute('class', 'nav navnar-nav');
