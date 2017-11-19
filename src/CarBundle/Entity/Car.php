@@ -63,6 +63,13 @@ class Car
     private $navigation;
 
     /**
+     * @var boolean
+     *
+     * @ORM\Column(name="promoted", type="boolean")
+     */
+    private $promoted;
+
+    /**
      * Get id
      *
      * @return int

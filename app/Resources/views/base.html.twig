@@ -22,6 +22,13 @@
 </nav>
 
 <div class="container">
+  {% for type, flashes in app.session.flashbag.all %}
+    {% for flash in flashes %}
+      <div class="alert alert-{{ type }}">
+        {{ flash }}
+      </div>
+    {% endfor %}
+  {% endfor %}
   {% block body %}{% endblock %}
 </div>
 {% block javascripts %}
