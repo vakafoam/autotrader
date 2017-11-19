@@ -222,4 +222,28 @@ class Car
     {
         return $this->model;
     }
+
+    /**
+     * Set promoted
+     *
+     * @param boolean $promoted
+     *
+     * @return Car
+     */
+    public function setPromoted($promoted)
+    {
+        $this->promoted = $promoted;
+
+        return $this;
+    }
+
+    /**
+     * Get promoted
+     *
+     * @return boolean
+     */
+    public function getPromoted()
+    {
+        return $this->promoted;
+    }
 }
